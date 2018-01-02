@@ -7,6 +7,26 @@
     <groupId>top.guyi.amazon</groupId>
     <artifactId>Amazon-MWS-SDK</artifactId>
     <version>1.0.0.2</version>
+    <repositories>
+        <repository>
+            <id>guyi-maple-nexus</id>
+            <url>http://127.0.0.1:8081/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>oschina-public</id>
+            <url>http://maven.oschina.net/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>atlassian nexus-public</id>
+            <url>https://maven.atlassian.com/content/groups/public/</url>
+        </repository>
+    </repositories>
     <build>
         <plugins>
             <plugin>
@@ -69,32 +89,36 @@
             <version>1.5.2.RELEASE</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.amazonservices.mws</groupId>
-            <artifactId>upload-data</artifactId>
-            <version>2009-01-01</version>
-            <type>pom</type>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.amazonservices.mws</groupId>-->
+            <!--<artifactId>upload-data</artifactId>-->
+            <!--<version>2009-01-01</version>-->
+            <!--<type>pom</type>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>com.amazonservices.mws</groupId>
-            <artifactId>report</artifactId>
-            <version>2009-01-01</version>
-            <type>pom</type>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.amazonservices.mws</groupId>-->
+            <!--<artifactId>report</artifactId>-->
+            <!--<version>2009-01-01</version>-->
+            <!--<type>pom</type>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>com.amazonservices.mws</groupId>
-            <artifactId>products</artifactId>
-            <version>2011-10-01</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.amazonservices.mws</groupId>-->
+            <!--<artifactId>products</artifactId>-->
+            <!--<version>2011-10-01</version>-->
+        <!--</dependency>-->
 
+        <!--<dependency>-->
+            <!--<groupId>com.amazonservices.mws</groupId>-->
+            <!--<artifactId>orders</artifactId>-->
+            <!--<version>2013-09-01</version>-->
+        <!--</dependency>-->
         <dependency>
-            <groupId>com.amazonservices.mws</groupId>
-            <artifactId>orders</artifactId>
-            <version>2013-09-01</version>
+            <groupId>fakepath</groupId>
+            <artifactId>mwsorders_2013</artifactId>
+            <version>09-01_v2018-01-01</version>
         </dependency>
-
     </dependencies>
 
 </project>
